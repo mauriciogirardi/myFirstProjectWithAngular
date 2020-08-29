@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="box">
+    <div class="box__progressAndAttempts">
+      <app-progress [progressBar]="progress"></app-progress>
+      <app-attempts [attempts]="attempts"></app-attempts>
+    </div>
+    <h2>{{ instruction }}</h2>
+    <p>{{ roundFrase.fraseEng }}</p>
+    <div class="form">
+      <textarea (input)="updateResponse($event)" [value]="response"></textarea>
+      <button (click)="checkAnswer()" mat-raised-button>Verificar</button>
+    </div>
+  </div>
+</div>

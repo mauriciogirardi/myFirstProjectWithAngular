@@ -1,0 +1,23 @@
+.boxEndGame {
+  width: 400px;
+  height: 100px;
+  background-color: rgb(235, 235, 235);
+  border-radius: 8px;
+  text-align: center;
+  margin: 50px auto;
+  h3 {
+    color: red;
+    line-height: 100px;
+    font-weight: bold;
+  }
+
+  h3.win {
+    color: green;
+  }
+
+  button {
+    background-color: #1cb0f6;
+    color: #fff;
+    margin-top: 10px;
+  }
+}

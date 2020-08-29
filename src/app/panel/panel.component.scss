@@ -1,0 +1,48 @@
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px 20px;
+
+  .box {
+    background-color: rgb(236, 236, 236);
+    padding: 40px 50px;
+    border-radius: 5px;
+
+    .box__progressAndAttempts {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+
+      @media (max-width: 500px) {
+        flex-wrap: wrap;
+        app-attempts {
+          width: 100%;
+          margin-top: 15px;
+        }
+      }
+    }
+
+    .form {
+      text-align: right;
+
+      textarea {
+        width: 100%;
+        height: 120px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        outline-color: #1cb0f6;
+        resize: vertical;
+        padding: 10px;
+        font-size: 18px;
+      }
+
+      button {
+        background-color: #1cb0f6;
+        color: #fff;
+        margin-top: 10px;
+      }
+    }
+  }
+}
